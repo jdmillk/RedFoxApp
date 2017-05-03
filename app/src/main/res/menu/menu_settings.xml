@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_Modificar_perfil"
+        android:title="@string/lb_Modificar_perfil" />
+    <item android:id="@+id/action_Añadir_mascota"
+        android:title="@string/lb_Añadir_mascota" />
+    <item android:id="@+id/action_Mapa"
+        android:title="@string/lb_Mapa" />
+    <item android:id="@+id/action_anadir_opinion"
+        android:title="@string/lb_anadir_opinion" />
+    <item android:id="@+id/action_Desconectarse"
+        android:title="@string/lb_Desconectarse" />
+</menu>

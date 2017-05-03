@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/action_Iniciar_sesion"
+    android:title="@string/lb_Iniciar_sesion" />
+<item android:id="@+id/action_registrarse"
+    android:title="@string/lb_Registrarse" />
+    <item android:id="@+id/action_acercade"
+        android:title="@string/lb_acercade" />
+
+</menu>

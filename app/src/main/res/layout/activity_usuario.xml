@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_usuario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.joan.ra1.Usuario">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etEmailM"
+        android:layout_below="@+id/etCntrasenaM"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:text="@string/lb_Pais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPais"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spPaisM"
+        android:layout_alignBottom="@+id/tvPais"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/etEmailM" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etCiudadM"
+        android:layout_below="@+id/spPaisM"
+        android:layout_alignStart="@+id/spPaisM" />
+
+    <Button
+        android:text="@string/lb_Registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCiudadM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:id="@+id/btRegistrarse"
+        android:fontFamily="casual" />
+
+    <TextView
+        android:text="@string/lb_Contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/etCntrasenaM"
+        android:layout_alignBottom="@+id/etCntrasenaM"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/lb_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/etEmailM"
+        android:layout_alignBottom="@+id/etEmailM"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/lb_Ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:id="@+id/tvCiudad"
+        android:layout_alignBaseline="@+id/etCiudadM"
+        android:layout_alignBottom="@+id/etCiudadM"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etUsuarioM"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etCntrasenaM"
+        android:layout_below="@+id/etUsuarioM"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:text="@string/lb_Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/etUsuarioM"
+        android:layout_alignBottom="@+id/etUsuarioM"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp" />
+
+</RelativeLayout>

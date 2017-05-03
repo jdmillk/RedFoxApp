@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joan.ra1">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/zorro_ic"
+        android:label="@string/app_nombre"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Usuario" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".Mascota" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".Login"  android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".Perfil" />
+        <activity android:name=".Registrado" />
+        <activity android:name=".MascotaAdapter" />
+        <activity android:name=".ModificarUsuario" />
+        <activity android:name=".ModificarMascota" />
+        <activity android:name=".Mapa" />
+
+        <service android:name="com.mapbox.mapboxsdk.telemetry.TelemetryService" />
+
+        <activity android:name=".AnadirOpinion" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".ListadoOpiniones" />
+        <activity
+            android:name=".Acercade"
+            android:configChanges="locale|orientation" />
+        <activity android:name=".Settings_Server"></activity>
+    </application>
+
+</manifest>

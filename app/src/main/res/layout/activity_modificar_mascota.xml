@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_modificar_mascota"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.joan.ra1.ModificarMascota">
+    <TextView
+        android:text="@string/lb_Apodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvApodo"
+        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:layout_alignBaseline="@+id/etApodoM"
+        android:layout_alignBottom="@+id/etApodoM"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/lb_Tamano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTamano"
+        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:layout_alignBottom="@+id/spTamanoM"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spMascotaM"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/etApodoM"
+        android:layout_toEndOf="@+id/tvMascota" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etApodoM"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tvMascota" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spTamanoM"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/tvMascota"
+        android:layout_toEndOf="@+id/tvMascota" />
+
+    <CheckBox
+        android:text="@string/lb_Amistoso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/cbAmistosoM"
+        android:fontFamily="casual"
+        android:checked="false"
+        android:layout_below="@+id/tvTamano"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/lb_btModificarM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btModificarM"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:text="@string/lb_Mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMascota"
+        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:layout_alignTop="@+id/spMascotaM"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_report_image"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ivImagenM"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/btModificarM"
+        android:layout_below="@+id/cbAmistosoM" />
+
+</RelativeLayout>
